@@ -10,7 +10,7 @@ scenarios, nor performance tested. A suite of unit tests are passing however.
 
 # Install
 ```
-npm i json-influxdb-line
+npm i json-to-line-protocol
 ```
 
 # Usage
@@ -37,7 +37,7 @@ Any Object you want to convert to a line must be of the format:
 
 ## Streaming
 ```js
-var JsonInfluxDbStream = require('json-influxdb-line').JsonInfluxDbStream;
+var JsonInfluxDbStream = require('json-to-line-protocol').JsonInfluxDbStream;
 
 var jsonToLine = new JsonInfluxDBLineStream();
 
@@ -49,7 +49,7 @@ getJsonStream()
 
 ## Functional
 ```js
-var convert = require('json-influxdb-line').convert;
+var convert = require('json-to-line-protocol').convert;
 
 // This will create a String with the contents:
 // measurement-name,foo=bar value=15 1461108623664
