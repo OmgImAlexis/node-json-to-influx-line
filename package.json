@@ -1,7 +1,7 @@
 {
-  "name": "json-to-influxdb-line",
+  "name": "json-to-line-protocol",
   "version": "0.2.0",
-  "description": "Converts JSON input to InfluxDB line protocol format",
+  "description": "Converts JSON input to line protocol format",
   "main": "index.js",
   "scripts": {
     "test": "env NODE_PATH=. mocha test/"
@@ -15,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "evanshortiss/node-json-to-influx-line"
+    "url": "kanor1306/node-json-to-influx-line"
   },
   "author": "Evan Shortiss",
   "license": "MIT",
