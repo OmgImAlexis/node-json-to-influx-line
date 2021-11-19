@@ -79,7 +79,7 @@ exports.generateFieldString = function (data, keys) {
     for (var i in keys) {
       ret += escapeChars(FIELD_TAG_REPLACERS, keys[i]) +
         '=' +
-        data[keys[i]] +
+        (typeof data[keys[i]] === 'string' ? `"${data[keys[i]]}"` : data[keys[i]]) +
         ',';
     }
 
